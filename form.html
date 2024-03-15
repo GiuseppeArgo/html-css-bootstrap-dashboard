@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     
     <!-- header -->
@@ -51,42 +52,51 @@
         </nav>
     </header>
 
+    <!-- main -->
     <main>
-        <!-- sidebar -->
-        <div class="d-none d-md-flex flex-column flex-shrink-0 p-3 text-bg-dark vh-100 w-25">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              <span class="fs-4">Bootstrap Dashboard</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-5">
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><i class="bi bi-house-fill"></i> Dashboard</a>
-                </li>
-                <li>
-                    <a href="sponsor.html" class="nav-link text-white"><i class="bi bi-graph-up-arrow"></i> Sponsorizzazione</a>
-                </li>
-                <li>
-                    <a href="index.html" class="nav-link text-white"><i class="bi bi-bag"></i> Prodotti</a>
-                </li>
-                <li>
-                    <a href="form.html" class="nav-link active" aria-current="page"><i class="bi bi-bag-plus"></i> Nuovo Prodotto</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white"><i class="bi bi-people-fill"></i> Clienti</a>
-                </li>
-            </ul>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>Mario Rossi</strong>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- sidebar -->
+                <div class="d-none d-md-flex flex-column p-3 text-bg-dark vh-100 col-md-2">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-4">Bootstrap Dashboard</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white"><i class="bi bi-house-fill"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sponsor.html" class="nav-link text-white"><i class="bi bi-graph-up-arrow"></i> Sponsorizzazione</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-white"><i class="bi bi-bag"></i> Prodotti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="form.html" class="nav-link active" aria-current="page"><i class="bi bi-bag-plus"></i> Nuovo Prodotto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white"><i class="bi bi-people-fill"></i> Clienti</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                class="rounded-circle me-2">
+                            <span>Mario Rossi</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
