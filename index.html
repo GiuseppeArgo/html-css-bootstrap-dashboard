@@ -17,10 +17,10 @@
         <nav class="navbar d-md-none bg-dark navbar-expand-lg" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Dashboard</a>
@@ -58,7 +58,7 @@
             <div class="row">
                 
                 <!-- sidebar -->
-                <div class="d-none d-md-flex flex-column p-3 text-bg-dark vh-100 col-md-2">
+                <div class="d-none d-md-flex flex-column p-3 text-bg-dark vh-100 col-md-3 col-lg-2">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <span class="fs-4">Bootstrap Dashboard</span>
                     </a>
@@ -101,13 +101,13 @@
 
 
                 <!-- table section -->
-                <div class="col-xs-12 col-md-10 pt-3">
+                <div class="col-xs-12 col-md-9 col-lg-10 pt-3">
                     <div class="container-fluid">
                         <div class="d-flex justify-content-between">
-                            <h3>100 prodotti trovati</h3>
-                            <div class="btn-group" role="group" aria-label="buttons">
-                                <button type="button" class="btn btn-outline-secondary btn-sm">Esporta</button>
-                                <button type="button" class="btn btn-outline-secondary btn-sm">Nuovo</button>
+                            <h3>10 prodotti trovati</h3>
+                            <div class="btn-group d-flex align-items-center" role="group" aria-label="buttons">
+                                <a class="text-decoration-none btn btn-outline-secondary btn-sm" href="form.html">Esporta</a>
+                                <a class="text-decoration-none btn btn-outline-secondary btn-sm" href="form.html">Nuovo</a>
                             </div>
                         </div>
                         <hr>
@@ -117,17 +117,24 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" class="w-75">Nome</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
+                                        <th scope="col">Prezzo</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <th scope="row" class="row">
+                                            <div class="col-1 text-center">
+                                                <figure class="mb-0">
+                                                    <img src="https://picsum.photos/50/50" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="col-11 ps-0"><h6 class="d-inline">Smartphone Samsung Galaxy S21 <br><small class="text-secondary d-none d-xl-inline d-xxl-inline">Amoled, Fotocamera Ultra Wide, Batteria a lunga durata</small></h6></div>
+                                        </th>
+                                        <td class="align-middle">799.00 €</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
