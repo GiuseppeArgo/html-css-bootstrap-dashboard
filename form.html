@@ -102,15 +102,54 @@
                 <!-- right col -->
 
                 <div class="col-xs-12 col-md-9 col-lg-10 vh-100 overflow-y-auto">
-                    <div class="container mt-5 text-center">
-                        <h2>Crea nuovo prodotto</h2>
-                        <p class="fs-5">I campi contrassegnati con un asterisco (*) sono obbligatori.</p>
-                        <p class="fs-5">Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione.</p>
-                    
+                    <div class="container mt-5">
+                        <!-- form info -->
+                        <div class="text-center">
+                            <h2>Crea nuovo prodotto</h2>
+                            <p class="fs-5">I campi contrassegnati con un asterisco (*) sono obbligatori.</p>
+                            <p class="fs-5">Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione.</p>
+                        </div>
+                        
                         <div class="row mt-5">
-                            <div class="col-7"></div>
+                            <div class="col-12 col-lg-7 mt-5">
+                               <form> 
+                                    <div class="row align-items-center mb-3">
+                                        <label for="name" class="form-label col-12 col-md-3 pt-2 text-start">Nome</label>
+                                        <div class="col-12 col-md-9">
+                                            <input class="form-control" type="text" id="name" placeholder="Samsung Galaxy 10 Plus">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <label for="price" class="form-label col-12 col-md-3 pt-2 text-start">Prezzo</label>
+                                        <div class="col-12 col-md-9">
+                                            <input class="form-control" type="number" id="price" placeholder="99.00">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <label for="select" class="form-label ol-12 col-md-3 pt-2 text-start">Marca</label>
+                                        <div class="col-12 col-md-9">
+                                            <select id="select" class="form-select">
+                                                <option>--Seleziona--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mx-1">
+                                        <textarea class="form-control" id="Textarea" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" rows="6"></textarea>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control" id="inputGroupFile">
+                                        <label class="input-group-text" for="inputGroupFile">Immagine</label>
+                                    </div>
+                                    <div class="btn-group me-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-outline-secondary">Disponibile</button>
+                                        <button type="button" class="btn btn-outline-secondary">Esaurito</button>
+                                        <button type="button" class="btn btn-outline-secondary">Fuori Produzione</button>
+                                        <button type="button" class="btn btn-outline-secondary">In arrivo</button>
+                                    </div>
+                                </form> 
+                            </div>
 
-                            <div class="col-5 mt-5 text-start">
+                            <div class="col-12 col-lg-5 mt-5 text-start">
                                 <ul class="list-group ">
                                         <li class="list-group-item">
                                             <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
@@ -140,34 +179,12 @@
                             </div>
 
                         </div>
-
-
-
+                        <button type="button" class="btn btn-primary mt-3">Salva</button>
                     </div>
                 </div>
-            
             </div>
         </div>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
